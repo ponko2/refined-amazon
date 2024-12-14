@@ -3,7 +3,10 @@
   "description": "Simplifies the Amazon interface and adds useful features",
   "version": "0.1.0",
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@types/chrome": "^0.0.287",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "typescript": "^5.7.2",
     "wxt": "^0.19.22"
   },
@@ -15,7 +18,10 @@
     "compile": "tsc --noEmit",
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
+    "fix": "biome check --write",
+    "lint": "biome check",
     "postinstall": "wxt prepare",
+    "prepare": "node .husky/install.mjs",
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox"
   },
