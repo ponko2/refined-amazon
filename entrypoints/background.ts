@@ -22,7 +22,7 @@ const rules = [
       resourceTypes: [browser.declarativeNetRequest.ResourceType.MAIN_FRAME],
     },
   },
-] satisfies chrome.declarativeNetRequest.Rule[];
+] satisfies Browser.declarativeNetRequest.Rule[];
 
 export default defineBackground(() => {
   void browser.declarativeNetRequest.updateDynamicRules({
