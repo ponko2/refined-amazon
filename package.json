@@ -12,7 +12,15 @@
     "typescript": "^5.8.2",
     "wxt": "^0.20.0"
   },
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.7.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "dtrace-provider",
+      "esbuild",
+      "spawn-sync"
+    ]
+  },
   "private": true,
   "scripts": {
     "build": "wxt build",
