@@ -5,9 +5,6 @@ export default defineConfig({
   manifest: {
     name: "Refined Amazon",
     host_permissions: ["*://www.amazon.co.jp/*"],
-    permissions: [
-      "declarativeNetRequest",
-      "declarativeNetRequestWithHostAccess",
-    ],
+    permissions: ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
   },
 });
